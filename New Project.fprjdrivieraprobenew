@@ -1,0 +1,4 @@
+twobitCounter_tb
+	clk
+	out
+	rst

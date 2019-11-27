@@ -1,0 +1,68 @@
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+ source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+fi
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+ source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+fi
+ 
+echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> twobitCounter_tb.init
+echo work=./work >> twobitCounter_tb.init
+echo verilog work PNU_XOR2.v >> twobitCounter_tb.prj
+echo verilog work PNU_NOT.v >> twobitCounter_tb.prj
+echo verilog work PNU_DFF.v >> twobitCounter_tb.prj
+echo verilog work twobitCounter.v >> twobitCounter_tb.prj
+echo verilog work twobitCounter_tb.v >> twobitCounter_tb.prj
+echo vcd dumpfile twobitCounter_tb.vcd >> twobitCounter_tb.tcl
+echo vcd dumpvars -m /twobitCounter_tb -l 1 >> twobitCounter_tb.tcl
+echo run 10000 ns >> twobitCounter_tb.tcl
+echo vcd dumpflush >> twobitCounter_tb.tcl
+echo quit -f >> twobitCounter_tb.tcl
+fuse -top work.twobitCounter_tb -init twobitCounter_tb.init -prj twobitCounter_tb.prj  -lib PNULib -o twobitCounter_tb.exe
+./twobitCounter_tb.exe -tclbatch twobitCounter_tb.tcl
+rm twobitCounter_tb.tcl
+rm twobitCounter_tb.init
+rm twobitCounter_tb.prj
+rm fuse.xmsgs
+rm fuseRelaunch.cmd
+rm isim.wdb
+rm -f twobitCounter_tb.exe fuse.log isim.log
+rm -rf isim
+rm list of verilog or VHDL files
+rm -rf ./work
+rm -rf PNU_AND2.v
+rm -rf PNU_AND3.v
+rm -rf PNU_AND4.v
+rm -rf PNU_AND8.v
+rm -rf PNU_BUF.v
+rm -rf PNU_DFF.v
+rm -rf PNU_DFF_Ce.v
+rm -rf PNU_JKFF.v
+rm -rf PNU_MUX2.v
+rm -rf PNU_MUX4.v
+rm -rf PNU_MUX8.v
+rm -rf PNU_NAND2.v
+rm -rf PNU_NAND3.v
+rm -rf PNU_NAND4.v
+rm -rf PNU_NAND8.v
+rm -rf PNU_NOR2.v
+rm -rf PNU_NOR3.v
+rm -rf PNU_NOR4.v
+rm -rf PNU_NOR8.v
+rm -rf PNU_NOT.v
+rm -rf PNU_ONE.v
+rm -rf PNU_OR2.v
+rm -rf PNU_OR3.v
+rm -rf PNU_OR4.v
+rm -rf PNU_OR8.v
+rm -rf PNU_SRAM.v
+rm -rf PNU_TBUF.v
+rm -rf PNU_XNOR2.v
+rm -rf PNU_XNOR3.v
+rm -rf PNU_XNOR4.v
+rm -rf PNU_XOR2.v
+rm -rf PNU_XOR3.v
+rm -rf PNU_XOR4.v
+rm -rf PNU_ZERO.v
+rm -rf twobitCounter.v
+rm -rf twobitCounter_tb.v
+echo Finish simulation!!

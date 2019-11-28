@@ -1,4 +1,9 @@
-twobitCounter_tb
+testdata_tb
 	clk
-	out
-	rst
+	data1
+	data2
+	data3
+	rstgame
+	stage1
+	stage2
+	stage3

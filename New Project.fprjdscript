@@ -5,27 +5,29 @@ if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
 fi
  
-echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> twobitCounter_tb.init
-echo work=./work >> twobitCounter_tb.init
-echo verilog work PNU_XOR2.v >> twobitCounter_tb.prj
-echo verilog work PNU_NOT.v >> twobitCounter_tb.prj
-echo verilog work PNU_DFF.v >> twobitCounter_tb.prj
-echo verilog work twobitCounter.v >> twobitCounter_tb.prj
-echo verilog work twobitCounter_tb.v >> twobitCounter_tb.prj
-echo vcd dumpfile twobitCounter_tb.vcd >> twobitCounter_tb.tcl
-echo vcd dumpvars -m /twobitCounter_tb -l 1 >> twobitCounter_tb.tcl
-echo run 10000 ns >> twobitCounter_tb.tcl
-echo vcd dumpflush >> twobitCounter_tb.tcl
-echo quit -f >> twobitCounter_tb.tcl
-fuse -top work.twobitCounter_tb -init twobitCounter_tb.init -prj twobitCounter_tb.prj  -lib PNULib -o twobitCounter_tb.exe
-./twobitCounter_tb.exe -tclbatch twobitCounter_tb.tcl
-rm twobitCounter_tb.tcl
-rm twobitCounter_tb.init
-rm twobitCounter_tb.prj
+echo work=./work >> testdata_tb.init
+echo verilog work PNU_XOR2.v >> testdata_tb.prj
+echo verilog work PNU_NOT.v >> testdata_tb.prj
+echo verilog work PNU_DFF_Ce.v >> testdata_tb.prj
+echo verilog work PNU_DFF.v >> testdata_tb.prj
+echo verilog work twobitCounter.v >> testdata_tb.prj
+echo verilog work seq_register.v >> testdata_tb.prj
+echo verilog work testdata.v >> testdata_tb.prj
+echo verilog work testdata_tb.v >> testdata_tb.prj
+echo vcd dumpfile testdata_tb.vcd >> testdata_tb.tcl
+echo vcd dumpvars -m /testdata_tb -l 1 >> testdata_tb.tcl
+echo run 10000 ns >> testdata_tb.tcl
+echo vcd dumpflush >> testdata_tb.tcl
+echo quit -f >> testdata_tb.tcl
+fuse -top work.testdata_tb -init testdata_tb.init -prj testdata_tb.prj  -o testdata_tb.exe
+./testdata_tb.exe -tclbatch testdata_tb.tcl
+rm testdata_tb.tcl
+rm testdata_tb.init
+rm testdata_tb.prj
 rm fuse.xmsgs
 rm fuseRelaunch.cmd
 rm isim.wdb
-rm -f twobitCounter_tb.exe fuse.log isim.log
+rm -f testdata_tb.exe fuse.log isim.log
 rm -rf isim
 rm list of verilog or VHDL files
 rm -rf ./work
@@ -64,5 +66,7 @@ rm -rf PNU_XOR3.v
 rm -rf PNU_XOR4.v
 rm -rf PNU_ZERO.v
 rm -rf twobitCounter.v
-rm -rf twobitCounter_tb.v
+rm -rf seq_register.v
+rm -rf testdata.v
+rm -rf testdata_tb.v
 echo Finish simulation!!

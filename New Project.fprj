@@ -46,7 +46,7 @@ filen=0
 n=0
 [lastservicesetting - SimulateISim]
 taskname - linen=1
-taskname - 0=twobitCounter_tb
+taskname - 0=testdata_tb
 usetasknamebymodulename - linen=1
 usetasknamebymodulename - 0=-1
 useautoalign - linen=1
@@ -59,7 +59,7 @@ simulationunit - 0=2
 compileordern - linen=1
 compileordern - 0=0
 vsimadvancedoption - linen=0
-topmodule - 0=twobitCounter_tb
+topmodule - 0=testdata_tb
 [lastservicesetting - common]
 advancedoptionn - linen=1
 advancedoptionn - 0=0

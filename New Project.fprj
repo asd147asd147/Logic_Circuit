@@ -37,13 +37,23 @@ file31=..\Program Files (x86)\System Centroid\Flowrian R7\Library\PNULib\sources
 file32=..\Program Files (x86)\System Centroid\Flowrian R7\Library\PNULib\sources\PNU_XOR4.v
 file33=..\Program Files (x86)\System Centroid\Flowrian R7\Library\PNULib\sources\PNU_ZERO.v
 [folder1]
-filen=2
-file0=twobitCounter.v
-file1=twobitCounter_tb.v
+filen=11
+file0=tFF.v
+file1=tFF_tb.v
+file2=tFFTwoCnt.v
+file3=tFFTwoCnt_tb.v
+file4=StageData.v
+file5=StageData_tb.v
+file6=stageOn.v
+file7=stageOn_tb.v
+file8=levelToPulse.v
+file9=buttonConvertData.v
+file10=buttonConvertData_tb.v
 [folder2]
 filen=0
 [usedlibrary]
-n=0
+n=1
+0=PNULib
 [lastservicesetting - SimulateISim]
 taskname - linen=1
 taskname - 0=buttonConvertData_tb

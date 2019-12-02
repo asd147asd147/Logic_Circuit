@@ -5,29 +5,31 @@ if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
 fi
  
-echo work=./work >> testdata_tb.init
-echo verilog work PNU_XOR2.v >> testdata_tb.prj
-echo verilog work PNU_NOT.v >> testdata_tb.prj
-echo verilog work PNU_DFF_Ce.v >> testdata_tb.prj
-echo verilog work PNU_DFF.v >> testdata_tb.prj
-echo verilog work twobitCounter.v >> testdata_tb.prj
-echo verilog work seq_register.v >> testdata_tb.prj
-echo verilog work testdata.v >> testdata_tb.prj
-echo verilog work testdata_tb.v >> testdata_tb.prj
-echo vcd dumpfile testdata_tb.vcd >> testdata_tb.tcl
-echo vcd dumpvars -m /testdata_tb -l 1 >> testdata_tb.tcl
-echo run 10000 ns >> testdata_tb.tcl
-echo vcd dumpflush >> testdata_tb.tcl
-echo quit -f >> testdata_tb.tcl
-fuse -top work.testdata_tb -init testdata_tb.init -prj testdata_tb.prj  -o testdata_tb.exe
-./testdata_tb.exe -tclbatch testdata_tb.tcl
-rm testdata_tb.tcl
-rm testdata_tb.init
-rm testdata_tb.prj
+echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> buttonConvertData_tb.init
+echo work=./work >> buttonConvertData_tb.init
+echo verilog work PNU_AND2.v >> buttonConvertData_tb.prj
+echo verilog work PNU_NOT.v >> buttonConvertData_tb.prj
+echo verilog work PNU_DFF.v >> buttonConvertData_tb.prj
+echo verilog work PNU_OR2.v >> buttonConvertData_tb.prj
+echo verilog work PNU_AND3.v >> buttonConvertData_tb.prj
+echo verilog work PNU_AND4.v >> buttonConvertData_tb.prj
+echo verilog work levelToPulse.v >> buttonConvertData_tb.prj
+echo verilog work buttonConvertData.v >> buttonConvertData_tb.prj
+echo verilog work buttonConvertData_tb.v >> buttonConvertData_tb.prj
+echo vcd dumpfile buttonConvertData_tb.vcd >> buttonConvertData_tb.tcl
+echo vcd dumpvars -m /buttonConvertData_tb -l 1 >> buttonConvertData_tb.tcl
+echo run 10000 ns >> buttonConvertData_tb.tcl
+echo vcd dumpflush >> buttonConvertData_tb.tcl
+echo quit -f >> buttonConvertData_tb.tcl
+fuse -top work.buttonConvertData_tb -init buttonConvertData_tb.init -prj buttonConvertData_tb.prj  -lib PNULib -o buttonConvertData_tb.exe
+./buttonConvertData_tb.exe -tclbatch buttonConvertData_tb.tcl
+rm buttonConvertData_tb.tcl
+rm buttonConvertData_tb.init
+rm buttonConvertData_tb.prj
 rm fuse.xmsgs
 rm fuseRelaunch.cmd
 rm isim.wdb
-rm -f testdata_tb.exe fuse.log isim.log
+rm -f buttonConvertData_tb.exe fuse.log isim.log
 rm -rf isim
 rm list of verilog or VHDL files
 rm -rf ./work
@@ -65,8 +67,15 @@ rm -rf PNU_XOR2.v
 rm -rf PNU_XOR3.v
 rm -rf PNU_XOR4.v
 rm -rf PNU_ZERO.v
-rm -rf twobitCounter.v
-rm -rf seq_register.v
-rm -rf testdata.v
-rm -rf testdata_tb.v
+rm -rf tFF.v
+rm -rf tFF_tb.v
+rm -rf tFFTwoCnt.v
+rm -rf tFFTwoCnt_tb.v
+rm -rf StageData.v
+rm -rf StageData_tb.v
+rm -rf stageOn.v
+rm -rf stageOn_tb.v
+rm -rf levelToPulse.v
+rm -rf buttonConvertData.v
+rm -rf buttonConvertData_tb.v
 echo Finish simulation!!

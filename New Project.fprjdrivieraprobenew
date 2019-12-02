@@ -1,9 +1,5 @@
-testdata_tb
-	clk
-	data1
-	data2
-	data3
-	rstgame
-	stage1
-	stage2
-	stage3
+buttonConvertData_tb
+	buttonIn
+	buttonOut
+	clock
+	reset

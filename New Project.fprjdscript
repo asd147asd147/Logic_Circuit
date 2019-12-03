@@ -5,31 +5,25 @@ if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
 fi
  
-echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> buttonConvertData_tb.init
-echo work=./work >> buttonConvertData_tb.init
-echo verilog work PNU_AND2.v >> buttonConvertData_tb.prj
-echo verilog work PNU_NOT.v >> buttonConvertData_tb.prj
-echo verilog work PNU_DFF.v >> buttonConvertData_tb.prj
-echo verilog work PNU_OR2.v >> buttonConvertData_tb.prj
-echo verilog work PNU_AND3.v >> buttonConvertData_tb.prj
-echo verilog work PNU_AND4.v >> buttonConvertData_tb.prj
-echo verilog work levelToPulse.v >> buttonConvertData_tb.prj
-echo verilog work buttonConvertData.v >> buttonConvertData_tb.prj
-echo verilog work buttonConvertData_tb.v >> buttonConvertData_tb.prj
-echo vcd dumpfile buttonConvertData_tb.vcd >> buttonConvertData_tb.tcl
-echo vcd dumpvars -m /buttonConvertData_tb -l 1 >> buttonConvertData_tb.tcl
-echo run 10000 ns >> buttonConvertData_tb.tcl
-echo vcd dumpflush >> buttonConvertData_tb.tcl
-echo quit -f >> buttonConvertData_tb.tcl
-fuse -top work.buttonConvertData_tb -init buttonConvertData_tb.init -prj buttonConvertData_tb.prj  -lib PNULib -o buttonConvertData_tb.exe
-./buttonConvertData_tb.exe -tclbatch buttonConvertData_tb.tcl
-rm buttonConvertData_tb.tcl
-rm buttonConvertData_tb.init
-rm buttonConvertData_tb.prj
+echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> stageClear_tb.init
+echo work=./work >> stageClear_tb.init
+echo verilog work stageClear.v >> stageClear_tb.prj
+echo verilog work stageClear_tb.v >> stageClear_tb.prj
+echo vcd dumpfile stageClear_tb.vcd >> stageClear_tb.tcl
+echo vcd dumpvars -m /stageClear_tb -l 1 >> stageClear_tb.tcl
+echo vcd dumpvars -m /stageClear_tb/U0 -l 1 >> stageClear_tb.tcl
+echo run 10000 ns >> stageClear_tb.tcl
+echo vcd dumpflush >> stageClear_tb.tcl
+echo quit -f >> stageClear_tb.tcl
+fuse -top work.stageClear_tb -init stageClear_tb.init -prj stageClear_tb.prj  -lib PNULib -o stageClear_tb.exe
+./stageClear_tb.exe -tclbatch stageClear_tb.tcl
+rm stageClear_tb.tcl
+rm stageClear_tb.init
+rm stageClear_tb.prj
 rm fuse.xmsgs
 rm fuseRelaunch.cmd
 rm isim.wdb
-rm -f buttonConvertData_tb.exe fuse.log isim.log
+rm -f stageClear_tb.exe fuse.log isim.log
 rm -rf isim
 rm list of verilog or VHDL files
 rm -rf ./work
@@ -78,4 +72,12 @@ rm -rf stageOn_tb.v
 rm -rf levelToPulse.v
 rm -rf buttonConvertData.v
 rm -rf buttonConvertData_tb.v
+rm -rf ledOnOff.v
+rm -rf ledOnOff_tb.v
+rm -rf compareStage.v
+rm -rf compareStage_tb.v
+rm -rf dataMux.v
+rm -rf dataMux_tb.v
+rm -rf stageClear.v
+rm -rf stageClear_tb.v
 echo Finish simulation!!

@@ -13,22 +13,23 @@ output [1:0] currentData;
 reg [1:0] currentData;
 integer checkStage = 0;
 
-always @(posedge nextData)
-begin
-    case(checkStage)
-        0:currentData = data1;
-        1:currentData = data2;
-        2:currentData = data3;
-        3:currentData = data4;
-        4:currentData = data5;
-    endcase
-    checkStage = checkStage + 1;
-    if(checkStage == 5)
-        checkStage = 0;
-end
-
-always @(posedge reset)
-begin
-    checkStage = 0;
-end
+	always @(posedge nextData or posedge reset)
+	begin
+		if(reset != 1)
+		begin
+		 case(checkStage)
+			  0:currentData = data1;
+			  1:currentData = data2;
+			  2:currentData = data3;
+			  3:currentData = data4;
+			  4:currentData = data5;
+		 endcase
+		 checkStage = checkStage + 1;
+		 if(checkStage == 5)
+			  checkStage = 0;
+		end
+		else if(reset == 1)
+			checkStage = 0;
+	end
+	
 endmodule

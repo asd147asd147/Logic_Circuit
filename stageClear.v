@@ -12,9 +12,12 @@ reg allclear;
 
 integer stageStack = 0, stageNum = 1;
 
-always @(posedge trueStack)
+always @(posedge trueStack or posedge reset)
 begin
+	if(reset == 0)
+	begin
     clear = 0;
+	 allclear = 0;
     stageNum = 0;
     if(stage[4] == 1)
         stageNum = stageNum + 1;
@@ -38,13 +41,14 @@ begin
         end
 
     end
-end
-
-always @(posedge reset)
-begin
-    stageStack = 0;
-    stageNum = 0;
-    clear = 0;
+	 end
+	 else if(reset == 1)
+	 begin
+		 stageStack = 0;
+		 stageNum = 0;
+		 clear = 0;
+		 allclear = 0;
+	 end
 end
 
 endmodule

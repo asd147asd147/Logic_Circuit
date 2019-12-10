@@ -20,7 +20,7 @@ Portname: buttonOn ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 
 0
 ,RV:
 0
-Port Left: 384 Top: 632 ,SymbolSideLeft: 384 ,SymbolSideTop: 608
+Port Left: 376 Top: 632 ,SymbolSideLeft: 376 ,SymbolSideTop: 608
 Portname: data ,PortType: multibit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
 1
 ,RV:
@@ -30,12 +30,12 @@ Portname: f ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
 0
 ,RV:
 0
-Port Left: 432 Top: 632 ,SymbolSideLeft: 432 ,SymbolSideTop: 608
+Port Left: 448 Top: 632 ,SymbolSideLeft: 448 ,SymbolSideTop: 608
 Portname: myIn ,PortType: multibit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
 1
 ,RV:
 0
-Port Left: 536 Top: 592 ,SymbolSideLeft: 512 ,SymbolSideTop: 592
+Port Left: 536 Top: 600 ,SymbolSideLeft: 512 ,SymbolSideTop: 600
 Portname: t ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
 0
 ,RV:

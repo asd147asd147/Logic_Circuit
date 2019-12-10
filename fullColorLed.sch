@@ -2,7 +2,7 @@ ModuleName fullColorLed
 LanguageType Veirlog
 GridInterval 8
 MillimetersIn100RealScaledUnit 25
-ZoomOutScale 64
+ZoomOutScale 71
 NumberOfHorzPapaers 8
 NumberOfVertPapaers 4
 Parameters
@@ -110,74 +110,6 @@ Edge X1: 48 ,Y1: 648 ,X2: 72 ,Y2: 648
 End
 Branches
 End
-Wire Name: b13
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 304 ,Y1: 408 ,X2: 312 ,Y2: 408
-Edge X1: 312 ,Y1: 360 ,X2: 312 ,Y2: 408
-Edge X1: 312 ,Y1: 360 ,X2: 744 ,Y2: 360
-Edge X1: 744 ,Y1: 328 ,X2: 744 ,Y2: 360
-End
-Branches
-End
-Wire Name: b14
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 520 ,Y1: 368 ,X2: 520 ,Y2: 408
-Edge X1: 520 ,Y1: 368 ,X2: 776 ,Y2: 368
-Edge X1: 776 ,Y1: 328 ,X2: 776 ,Y2: 368
-End
-Branches
-End
-Wire Name: b15
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 744 ,Y1: 376 ,X2: 744 ,Y2: 408
-Edge X1: 744 ,Y1: 376 ,X2: 808 ,Y2: 376
-Edge X1: 808 ,Y1: 328 ,X2: 808 ,Y2: 376
-End
-Branches
-End
-Wire Name: b16
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 968 ,Y1: 392 ,X2: 968 ,Y2: 408
-Edge X1: 840 ,Y1: 392 ,X2: 968 ,Y2: 392
-Edge X1: 840 ,Y1: 328 ,X2: 840 ,Y2: 392
-End
-Branches
-End
-Wire Name: b17
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 872 ,Y1: 328 ,X2: 872 ,Y2: 384
-Edge X1: 872 ,Y1: 384 ,X2: 1184 ,Y2: 384
-Edge X1: 1184 ,Y1: 384 ,X2: 1184 ,Y2: 408
-Edge X1: 1176 ,Y1: 408 ,X2: 1184 ,Y2: 408
-End
-Branches
-End
-Wire Name: b18
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 920 ,Y1: 240 ,X2: 920 ,Y2: 320
-Edge X1: 512 ,Y1: 320 ,X2: 920 ,Y2: 320
-Edge X1: 512 ,Y1: 272 ,X2: 512 ,Y2: 320
-End
-Branches
-End
 Wire Name: b21
 LV: 3
 RV: 0
@@ -243,40 +175,6 @@ Edge X1: 72 ,Y1: 128 ,X2: 136 ,Y2: 128
 End
 Branches
 End
-Wire Name: b23
-LV: 4
-RV: 0
-Width: 5
-Edges
-Edge X1: 368 ,Y1: 296 ,X2: 456 ,Y2: 296
-Edge X1: 456 ,Y1: 296 ,X2: 456 ,Y2: 352
-Edge X1: 456 ,Y1: 96 ,X2: 456 ,Y2: 296
-Edge X1: 144 ,Y1: 352 ,X2: 456 ,Y2: 352
-Edge X1: 456 ,Y1: 352 ,X2: 1032 ,Y2: 352
-Edge X1: 456 ,Y1: 96 ,X2: 568 ,Y2: 96
-End
-Branches
-Branch Left: 152 ,Top: 352
-BranchStrList
-0
-End
-Branch Left: 368 ,Top: 352
-BranchStrList
-1
-End
-Branch Left: 592 ,Top: 352
-BranchStrList
-2
-End
-Branch Left: 816 ,Top: 352
-BranchStrList
-3
-End
-Branch Left: 1024 ,Top: 352
-BranchStrList
-4
-End
-End
 Wire Name: w28
 LV: 0
 RV: 0
@@ -284,21 +182,6 @@ Width: 1
 Edges
 Edge X1: 560 ,Y1: 128 ,X2: 568 ,Y2: 128
 Edge X1: 560 ,Y1: 128 ,X2: 560 ,Y2: 144
-End
-Branches
-End
-Wire Name: w27
-LV: 0
-RV: 0
-Width: 1
-Edges
-Edge X1: 664 ,Y1: 232 ,X2: 672 ,Y2: 232
-Edge X1: 672 ,Y1: 176 ,X2: 672 ,Y2: 232
-Edge X1: 672 ,Y1: 232 ,X2: 704 ,Y2: 232
-Edge X1: 472 ,Y1: 176 ,X2: 672 ,Y2: 176
-Edge X1: 472 ,Y1: 112 ,X2: 472 ,Y2: 176
-Edge X1: 472 ,Y1: 112 ,X2: 568 ,Y2: 112
-Edge X1: 704 ,Y1: 224 ,X2: 704 ,Y2: 232
 End
 Branches
 End
@@ -311,15 +194,6 @@ Edge X1: 40 ,Y1: 184 ,X2: 40 ,Y2: 632
 Edge X1: 40 ,Y1: 184 ,X2: 664 ,Y2: 184
 Edge X1: 40 ,Y1: 632 ,X2: 72 ,Y2: 632
 Edge X1: 664 ,Y1: 184 ,X2: 664 ,Y2: 208
-End
-Branches
-End
-Wire Name: w31
-LV: 0
-RV: 0
-Width: 1
-Edges
-Edge X1: 688 ,Y1: 272 ,X2: 704 ,Y2: 272
 End
 Branches
 End
@@ -365,52 +239,6 @@ Edge X1: 96 ,Y1: 312 ,X2: 168 ,Y2: 312
 End
 Branches
 End
-Wire Name: w30
-LV: 0
-RV: 0
-Width: 1
-Edges
-Edge X1: 784 ,Y1: 96 ,X2: 792 ,Y2: 96
-Edge X1: 792 ,Y1: 80 ,X2: 792 ,Y2: 96
-Edge X1: 480 ,Y1: 80 ,X2: 792 ,Y2: 80
-Edge X1: 480 ,Y1: 80 ,X2: 480 ,Y2: 136
-Edge X1: 424 ,Y1: 80 ,X2: 480 ,Y2: 80
-Edge X1: 480 ,Y1: 136 ,X2: 496 ,Y2: 136
-Edge X1: 24 ,Y1: 80 ,X2: 424 ,Y2: 80
-Edge X1: 424 ,Y1: 80 ,X2: 424 ,Y2: 264
-Edge X1: 24 ,Y1: 80 ,X2: 24 ,Y2: 296
-Edge X1: 24 ,Y1: 296 ,X2: 168 ,Y2: 296
-Edge X1: 424 ,Y1: 264 ,X2: 624 ,Y2: 264
-End
-Branches
-End
-Wire Name: w33
-LV: 0
-RV: 0
-Width: 1
-Edges
-Edge X1: 200 ,Y1: 152 ,X2: 440 ,Y2: 152
-Edge X1: 440 ,Y1: 152 ,X2: 440 ,Y2: 160
-Edge X1: 440 ,Y1: 160 ,X2: 440 ,Y2: 208
-Edge X1: 440 ,Y1: 160 ,X2: 952 ,Y2: 160
-End
-Branches
-End
-Wire Name: b27
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 384 ,Y1: 216 ,X2: 384 ,Y2: 288
-Edge X1: 368 ,Y1: 216 ,X2: 384 ,Y2: 216
-Edge X1: 384 ,Y1: 168 ,X2: 384 ,Y2: 216
-Edge X1: 384 ,Y1: 288 ,X2: 560 ,Y2: 288
-Edge X1: 560 ,Y1: 272 ,X2: 560 ,Y2: 288
-Edge X1: 384 ,Y1: 168 ,X2: 952 ,Y2: 168
-Edge X1: 952 ,Y1: 168 ,X2: 952 ,Y2: 200
-End
-Branches
-End
 Wire Name: w34
 LV: 0
 RV: 0
@@ -425,7 +253,7 @@ LV: 1
 RV: 0
 Width: 2
 Edges
-Edge X1: 1248 ,Y1: 208 ,X2: 1272 ,Y2: 208
+Edge X1: 1504 ,Y1: 176 ,X2: 1528 ,Y2: 176
 End
 Branches
 End
@@ -434,7 +262,7 @@ LV: 0
 RV: 0
 Width: 1
 Edges
-Edge X1: 1248 ,Y1: 192 ,X2: 1272 ,Y2: 192
+Edge X1: 1504 ,Y1: 160 ,X2: 1528 ,Y2: 160
 End
 Branches
 End
@@ -443,7 +271,7 @@ LV: 0
 RV: 0
 Width: 1
 Edges
-Edge X1: 1248 ,Y1: 176 ,X2: 1272 ,Y2: 176
+Edge X1: 1504 ,Y1: 144 ,X2: 1528 ,Y2: 144
 End
 Branches
 End
@@ -452,7 +280,258 @@ LV: 0
 RV: 0
 Width: 1
 Edges
-Edge X1: 1248 ,Y1: 160 ,X2: 1272 ,Y2: 160
+Edge X1: 1504 ,Y1: 128 ,X2: 1528 ,Y2: 128
+End
+Branches
+End
+Wire Name: w39
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 152 ,Y1: 296 ,X2: 168 ,Y2: 296
+End
+Branches
+End
+Wire Name: b36
+LV: 4
+RV: 0
+Width: 5
+Edges
+Edge X1: 456 ,Y1: 24 ,X2: 544 ,Y2: 24
+Edge X1: 456 ,Y1: 24 ,X2: 456 ,Y2: 96
+Edge X1: 456 ,Y1: 96 ,X2: 456 ,Y2: 296
+Edge X1: 456 ,Y1: 96 ,X2: 568 ,Y2: 96
+Edge X1: 368 ,Y1: 296 ,X2: 456 ,Y2: 296
+Edge X1: 456 ,Y1: 296 ,X2: 456 ,Y2: 352
+Edge X1: 144 ,Y1: 352 ,X2: 456 ,Y2: 352
+Edge X1: 456 ,Y1: 352 ,X2: 1032 ,Y2: 352
+End
+Branches
+Branch Left: 152 ,Top: 352
+BranchStrList
+0
+End
+Branch Left: 368 ,Top: 352
+BranchStrList
+1
+End
+Branch Left: 592 ,Top: 352
+BranchStrList
+2
+End
+Branch Left: 816 ,Top: 352
+BranchStrList
+3
+End
+Branch Left: 1024 ,Top: 352
+BranchStrList
+4
+End
+End
+Wire Name: w44
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 336 ,Y1: 40 ,X2: 544 ,Y2: 40
+End
+Branches
+End
+Wire Name: w40
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 24 ,Y1: 304 ,X2: 56 ,Y2: 304
+Edge X1: 56 ,Y1: 304 ,X2: 88 ,Y2: 304
+Edge X1: 56 ,Y1: 32 ,X2: 56 ,Y2: 304
+Edge X1: 56 ,Y1: 32 ,X2: 272 ,Y2: 32
+End
+Branches
+End
+Wire Name: w38
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 784 ,Y1: 96 ,X2: 792 ,Y2: 96
+Edge X1: 792 ,Y1: 80 ,X2: 792 ,Y2: 96
+Edge X1: 480 ,Y1: 80 ,X2: 792 ,Y2: 80
+Edge X1: 480 ,Y1: 80 ,X2: 480 ,Y2: 136
+Edge X1: 424 ,Y1: 80 ,X2: 480 ,Y2: 80
+Edge X1: 480 ,Y1: 136 ,X2: 496 ,Y2: 136
+Edge X1: 424 ,Y1: 80 ,X2: 424 ,Y2: 264
+Edge X1: 272 ,Y1: 80 ,X2: 424 ,Y2: 80
+Edge X1: 424 ,Y1: 264 ,X2: 624 ,Y2: 264
+Edge X1: 24 ,Y1: 80 ,X2: 272 ,Y2: 80
+Edge X1: 272 ,Y1: 48 ,X2: 272 ,Y2: 80
+Edge X1: 24 ,Y1: 80 ,X2: 24 ,Y2: 288
+Edge X1: 24 ,Y1: 288 ,X2: 88 ,Y2: 288
+End
+Branches
+End
+Wire Name: w45
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 752 ,Y1: 224 ,X2: 768 ,Y2: 224
+End
+Branches
+End
+Wire Name: w42
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 472 ,Y1: 176 ,X2: 672 ,Y2: 176
+Edge X1: 472 ,Y1: 112 ,X2: 472 ,Y2: 176
+Edge X1: 672 ,Y1: 176 ,X2: 672 ,Y2: 232
+Edge X1: 672 ,Y1: 232 ,X2: 672 ,Y2: 240
+Edge X1: 672 ,Y1: 232 ,X2: 688 ,Y2: 232
+Edge X1: 664 ,Y1: 240 ,X2: 672 ,Y2: 240
+Edge X1: 472 ,Y1: 112 ,X2: 568 ,Y2: 112
+End
+Branches
+End
+Wire Name: w46
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 688 ,Y1: 272 ,X2: 768 ,Y2: 272
+End
+Branches
+End
+Wire Name: b38
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 1184 ,Y1: 384 ,X2: 1184 ,Y2: 408
+Edge X1: 936 ,Y1: 384 ,X2: 1184 ,Y2: 384
+Edge X1: 1176 ,Y1: 408 ,X2: 1184 ,Y2: 408
+Edge X1: 936 ,Y1: 328 ,X2: 936 ,Y2: 384
+End
+Branches
+End
+Wire Name: b39
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 968 ,Y1: 392 ,X2: 968 ,Y2: 408
+Edge X1: 904 ,Y1: 392 ,X2: 968 ,Y2: 392
+Edge X1: 904 ,Y1: 328 ,X2: 904 ,Y2: 392
+End
+Branches
+End
+Wire Name: b40
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 744 ,Y1: 384 ,X2: 744 ,Y2: 408
+Edge X1: 744 ,Y1: 384 ,X2: 872 ,Y2: 384
+Edge X1: 872 ,Y1: 328 ,X2: 872 ,Y2: 384
+End
+Branches
+End
+Wire Name: b41
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 520 ,Y1: 368 ,X2: 520 ,Y2: 408
+Edge X1: 520 ,Y1: 368 ,X2: 840 ,Y2: 368
+Edge X1: 840 ,Y1: 328 ,X2: 840 ,Y2: 368
+End
+Branches
+End
+Wire Name: b42
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 304 ,Y1: 408 ,X2: 312 ,Y2: 408
+Edge X1: 312 ,Y1: 360 ,X2: 312 ,Y2: 408
+Edge X1: 312 ,Y1: 360 ,X2: 808 ,Y2: 360
+Edge X1: 808 ,Y1: 328 ,X2: 808 ,Y2: 360
+End
+Branches
+End
+Wire Name: b43
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 576 ,Y1: 272 ,X2: 576 ,Y2: 288
+Edge X1: 384 ,Y1: 288 ,X2: 576 ,Y2: 288
+Edge X1: 384 ,Y1: 216 ,X2: 384 ,Y2: 288
+Edge X1: 368 ,Y1: 216 ,X2: 384 ,Y2: 216
+Edge X1: 384 ,Y1: 168 ,X2: 384 ,Y2: 216
+Edge X1: 384 ,Y1: 168 ,X2: 1008 ,Y2: 168
+End
+Branches
+End
+Wire Name: b37
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 504 ,Y1: 272 ,X2: 504 ,Y2: 320
+Edge X1: 504 ,Y1: 320 ,X2: 1008 ,Y2: 320
+Edge X1: 1008 ,Y1: 240 ,X2: 1008 ,Y2: 320
+Edge X1: 1008 ,Y1: 184 ,X2: 1008 ,Y2: 240
+Edge X1: 984 ,Y1: 240 ,X2: 1008 ,Y2: 240
+End
+Branches
+End
+Wire Name: b44
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 1184 ,Y1: 168 ,X2: 1208 ,Y2: 168
+End
+Branches
+End
+Wire Name: w47
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 1184 ,Y1: 128 ,X2: 1208 ,Y2: 128
+End
+Branches
+End
+Wire Name: w41
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 200 ,Y1: 152 ,X2: 440 ,Y2: 152
+Edge X1: 440 ,Y1: 152 ,X2: 440 ,Y2: 160
+Edge X1: 440 ,Y1: 160 ,X2: 440 ,Y2: 208
+Edge X1: 440 ,Y1: 160 ,X2: 984 ,Y2: 160
+Edge X1: 984 ,Y1: 136 ,X2: 984 ,Y2: 160
+Edge X1: 984 ,Y1: 136 ,X2: 1120 ,Y2: 136
+End
+Branches
+End
+Wire Name: w43
+LV: 0
+RV: 0
+Width: 1
+Edges
+Edge X1: 712 ,Y1: 32 ,X2: 880 ,Y2: 32
+Edge X1: 880 ,Y1: 32 ,X2: 880 ,Y2: 184
+Edge X1: 880 ,Y1: 32 ,X2: 1096 ,Y2: 32
+Edge X1: 688 ,Y1: 184 ,X2: 880 ,Y2: 184
+Edge X1: 688 ,Y1: 184 ,X2: 688 ,Y2: 216
+Edge X1: 1096 ,Y1: 32 ,X2: 1096 ,Y2: 120
+Edge X1: 1096 ,Y1: 120 ,X2: 1120 ,Y2: 120
 End
 Branches
 End
@@ -486,32 +565,39 @@ Portname: allclear ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 
 1
 ,RV:
 0
-Port Left: 1272 Top: 160 ,Orientation: 0
+Port Left: 1528 Top: 128 ,Orientation: 0
 Portname: LED1_RED ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
 0
 ,Width:
 1
 ,RV:
 0
-Port Left: 1272 Top: 176 ,Orientation: 0
+Port Left: 1528 Top: 144 ,Orientation: 0
 Portname: LED2_GREEN ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
 0
 ,Width:
 1
 ,RV:
 0
-Port Left: 1272 Top: 192 ,Orientation: 0
+Port Left: 1528 Top: 160 ,Orientation: 0
 Portname: LED3_BLUE ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
 0
 ,Width:
 1
 ,RV:
 0
-Port Left: 1272 Top: 208 ,Orientation: 0
+Port Left: 1528 Top: 176 ,Orientation: 0
 Portname: LED4_YELLOW ,PortType: multibit ,LanguageType: Veriilog ,PortDirection: 2 ,LV:
 1
 ,Width:
 2
+,RV:
+0
+Port Left: 24 Top: 304 ,Orientation: 0
+Portname: stageStart ,PortType: singlebit ,LanguageType: Veriilog ,PortDirection: 0 ,LV:
+0
+,Width:
+1
 ,RV:
 0
 End
@@ -522,7 +608,7 @@ LibraryName: (NoLibraryName)
 IpName: buttonConvertData
 SymbolParameters
 End
-Symbol Left: 976 Top: 152
+Symbol Left: 1232 Top: 120
 Name: s1
 LibraryName: (NoLibraryName)
 IpName: ledOnOff
@@ -542,12 +628,6 @@ SymbolParameters
 End
 Symbol Left: 568 Top: 400
 Name: s5
-LibraryName: (NoLibraryName)
-IpName: StageData
-SymbolParameters
-End
-Symbol Left: 792 Top: 400
-Name: s6
 LibraryName: (NoLibraryName)
 IpName: StageData
 SymbolParameters
@@ -582,7 +662,7 @@ LibraryName: (NoLibraryName)
 IpName: compareStage
 SymbolParameters
 End
-Symbol Left: 728 Top: 192
+Symbol Left: 792 Top: 192
 Name: s11
 LibraryName: (NoLibraryName)
 IpName: dataMux
@@ -610,6 +690,48 @@ Symbol Left: 592 Top: 88
 Name: s17
 LibraryName: (NoLibraryName)
 IpName: stageClear
+SymbolParameters
+End
+Symbol Left: 88 Top: 280
+Name: s18
+LibraryName: PNULib
+IpName: PNU_OR2
+SymbolParameters
+End
+Symbol Left: 568 Top: 16
+Name: s19
+LibraryName: (NoLibraryName)
+IpName: showData
+SymbolParameters
+End
+Symbol Left: 272 Top: 24
+Name: s20
+LibraryName: PNULib
+IpName: PNU_OR2
+SymbolParameters
+End
+Symbol Left: 688 Top: 208
+Name: s21
+LibraryName: PNULib
+IpName: PNU_OR2
+SymbolParameters
+End
+Symbol Left: 792 Top: 400
+Name: s6
+LibraryName: (NoLibraryName)
+IpName: StageData
+SymbolParameters
+End
+Symbol Left: 1032 Top: 160
+Name: s22
+LibraryName: (NoLibraryName)
+IpName: dataOr
+SymbolParameters
+End
+Symbol Left: 1120 Top: 112
+Name: s23
+LibraryName: PNULib
+IpName: PNU_OR2
 SymbolParameters
 End
 End

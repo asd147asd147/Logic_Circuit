@@ -37,10 +37,10 @@ wire [1:0] b41;
 wire [1:0] b42;
 wire [1:0] b43;
 wire [1:0] b37;
-wire [1:0] b44;
 wire  w47;
 wire  w41;
 wire  w43;
+wire [1:0] b44;
 wire  b36_0_w4;
 wire  b36_1_w5;
 wire  b36_2_w6;
@@ -84,8 +84,8 @@ ledOnOff
       .F_LED3_BLUE(w35),
       .F_LED2_GREEN(w36),
       .F_LED1_RED(w37),
-      .dataIn(b44),
-      .ledOn(w47));
+      .ledOn(w47),
+      .dataIn(b44));
 
 StageData
      s2 (
@@ -216,17 +216,17 @@ StageData
       .reset(w29),
       .dataout(b39));
 
-dataOr
-     s22 (
-      .dataIn1(b43),
-      .dataIn2(b37),
-      .dataOut(b44));
-
 PNU_OR2
      s23 (
       .o1(w47),
       .i2(w41),
       .i1(w43));
+
+dataOr2
+     s22 (
+      .dataIn1(b43),
+      .dataIn2(b37),
+      .dataOut(b44));
 
 endmodule
 

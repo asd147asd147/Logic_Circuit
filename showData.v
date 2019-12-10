@@ -11,11 +11,10 @@ integer i = 0;
 always @(posedge clear)
 begin
     show = 0;
-    while(stage[i] != 1)
+    for(i = 5; i > 0; i = i-1)
     begin
         show = 1;
         show = 0;
-        i = i + 1;
     end
 end
 

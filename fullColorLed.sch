@@ -2,7 +2,7 @@ ModuleName fullColorLed
 LanguageType Veirlog
 GridInterval 8
 MillimetersIn100RealScaledUnit 25
-ZoomOutScale 13
+ZoomOutScale 17
 NumberOfHorzPapaers 8
 NumberOfVertPapaers 4
 Parameters
@@ -488,15 +488,6 @@ Edge X1: 1016 ,Y1: 248 ,X2: 1040 ,Y2: 248
 End
 Branches
 End
-Wire Name: b44
-LV: 1
-RV: 0
-Width: 2
-Edges
-Edge X1: 1216 ,Y1: 176 ,X2: 1240 ,Y2: 176
-End
-Branches
-End
 Wire Name: w47
 LV: 0
 RV: 0
@@ -532,6 +523,15 @@ Edge X1: 720 ,Y1: 192 ,X2: 912 ,Y2: 192
 Edge X1: 720 ,Y1: 192 ,X2: 720 ,Y2: 224
 Edge X1: 1128 ,Y1: 40 ,X2: 1128 ,Y2: 128
 Edge X1: 1128 ,Y1: 128 ,X2: 1152 ,Y2: 128
+End
+Branches
+End
+Wire Name: b44
+LV: 1
+RV: 0
+Width: 2
+Edges
+Edge X1: 1224 ,Y1: 176 ,X2: 1240 ,Y2: 176
 End
 Branches
 End
@@ -722,16 +722,16 @@ LibraryName: (NoLibraryName)
 IpName: StageData
 SymbolParameters
 End
-Symbol Left: 1064 Top: 168
-Name: s22
-LibraryName: (NoLibraryName)
-IpName: dataOr
-SymbolParameters
-End
 Symbol Left: 1152 Top: 120
 Name: s23
 LibraryName: PNULib
 IpName: PNU_OR2
+SymbolParameters
+End
+Symbol Left: 1064 Top: 168
+Name: s22
+LibraryName: (NoLibraryName)
+IpName: dataOr2
 SymbolParameters
 End
 End
